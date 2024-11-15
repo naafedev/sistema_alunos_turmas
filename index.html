@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de acompanhamento de estudantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de acompanhamento de estudantes</h1>
+    </header>
+    <nav>
+        <button id="viewStudents">Ver alunos(as)</button>
+        <button id="viewClasses">Ver turmas</button>
+    </nav>
+    <main>
+        <section id="studentSection" class="hidden">
+            <h2>Alunos</h2>
+            <div class="search-container">
+                <input type="text" id="studentSearch" placeholder="Search by name">
+                <button id="searchButton">Pesquisar</button>
+            </div>
+            <select id="studentSelect">
+                <option value="">Selecione o(a) aluno(a)</option>
+                <!-- Student options will be populated dynamically -->
+            </select>
+            <div id="studentInfo"></div>
+        </section>
+        <section id="classSection" class="hidden">
+            <h2>Turmas</h2>
+            <select id="classSelect">
+                <option value="">Selecione a turma</option>
+                <!-- Class options will be populated dynamically -->
+            </select>
+            <div id="classInfo"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
